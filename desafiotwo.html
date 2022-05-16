@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- MetaTags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título do projeto -->
+  <title>Desafio TechSicredi</title>
+  <!-- Fontes Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Exo2", sans-serif;
+      background-color: #fefefe;
+    }
+
+    .container {
+      align-items: center;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 10vh auto;
+      max-width: 980px;
+      width: 100%;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      font-style: italic;
+      font-weight: 300;
+      font-family: "Exo 2", sans-serif;
+      font-size: 1.45rem;
+      line-height: 2.25rem;
+      font-family: "Exo 2", sans-serif;
+    }
+
+    form {
+      display: flex;
+
+      flex-direction: column;
+      max-width: 450px;
+      width: 100%;
+    }
+
+    label {
+      color: #111;
+      margin: 5px 0;
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+    }
+
+    input {
+      margin: 10px 0;
+      display: block;
+      max-width: 450px;
+      width: 100%;
+      border: 1px solid green;
+      font-family: "Exo2", sans-serif;
+      padding: 12px 10px;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .btnCalcular {
+      max-width: 450px;
+      width: 100%;
+      border: 1px solid green;
+      font-family: "Exo2", sans-serif;
+      padding: 12px 10px;
+      border-radius: 5px;
+      outline: none;
+      background-color: green;
+      color: #fefefe;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btnCalcular:hover {
+      background-color: rgb(27, 109, 27);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title">Calculadora Sicredi | Rendimento Poupança</h1>
+    <form action="#" method="post">
+      <label for="valor_inicial">Valor Inicial</label>
+      <input type="number" id="valor_inicial" placeholder="R$ 1.000,00" required>
+
+      <label for="taxa_selic">Taxa Selic</label>
+      <input type="number" id="taxa_selic" placeholder="12.72%" required>
+
+      <label for="taxa_referencial">Taxa Referencial</label>
+      <input type="number" id="taxa_referencial" placeholder="0.17%" required>
+
+      <label for="periodo">Período em Meses</label>
+      <input type="number" id="periodo" placeholder="12" required>
+    </form>
+    <input type="submit" value="Calcular" id="btnCalculuar" class="btnCalcular"></input>
+  </main>
+
+  <!-- Javascript -->
+  <script defer src="./scripts/desafioTwo.js"></script>
+  <script defer src="./scripts/desafioThree.js"></script>
+</body>
+
+</html>

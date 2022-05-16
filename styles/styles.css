@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+header {
+  width: 100%;
+  margin-top: 20vh;
+}
+
+span {
+  color: green;
+}
+
+h2 {
+  font-family: "Exo2", sans-serif;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid green;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+.cards {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid green;
+}
+
+#btnComprar {
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid green;
+  font-family: "Exo2", sans-serif;
+  padding: 12px 10px;
+  border-radius: 5px;
+  outline: none;
+  background-color: green;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btnComprar:hover {
+  background-color: rgb(27, 109, 27);
+}
