@@ -71,5 +71,4 @@ btnCalcular.addEventListener("click", function () {
     tr.appendChild(tdTotalJuros);
     tr.appendChild(tdTotalAcumulado);
   }
-  // Adding the entire table to the body tag
 });
