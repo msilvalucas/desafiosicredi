@@ -27,20 +27,10 @@ btnCalcular.addEventListener("click", function () {
     taxaSelic <= 8.5 ? 0.7 * taxaSelic + 0 : 0.5 * 12 + taxaReferencial;
 
   var taxaJuros = taxaJuros / 100;
-
-  if (taxaSelic <= 8.5) {
-    var rendimentoPoupanca =
-      valorInicial * Math.pow(1 + taxaJuros, qtdMeses / 12);
-    alert(
-      "O resultado final do investimento foi de R$: " +
-        rendimentoPoupanca.toFixed(2)
-    );
-  } else {
-    var rendimentoPoupanca =
-      valorInicial * Math.pow(1 + taxaJuros, qtdMeses / 12);
-    alert(
-      "O resultado final do investimento foi de R$: " +
-        rendimentoPoupanca.toFixed(2)
-    );
-  }
+  var rendimentoPoupanca =
+    valorInicial * Math.pow(1 + taxaJuros, qtdMeses / 12);
+  alert(
+    "O resultado final do investimento foi de R$: " +
+      rendimentoPoupanca.toFixed(2)
+  );
 });
