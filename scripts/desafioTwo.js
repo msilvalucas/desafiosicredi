@@ -23,8 +23,11 @@ btnCalcular.addEventListener("click", function () {
   var inputQtdMeses = document.querySelector("#periodo");
   var qtdMeses = parseFloat(inputQtdMeses.value);
 
+  var calcSelicAbaixoInflacao = 0.7 * taxaSelic + 0;
+  var calcSelicAcimaInflacao = 0.5 * 12 + taxaReferencial;
+
   var taxaJuros =
-    taxaSelic <= 8.5 ? 0.7 * taxaSelic + 0 : 0.5 * 12 + taxaReferencial;
+    taxaSelic <= 8.5 ? calcSelicAbaixoInflacao : calcSelicAcimaInflacao;
 
   var taxaJuros = taxaJuros / 100;
   var rendimentoPoupanca =
