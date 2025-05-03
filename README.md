@@ -1,5 +1,7 @@
 # Desafio Sicredi [Estágio] — Processo Seletivo 2022
 
+![image](https://github.com/user-attachments/assets/aee6b7e0-d400-43f4-a04f-fcf28137c3c4)
+
 > Três mini‑projetos em **HTML + CSS + JavaScript** que desenvolvi durante o desafio técnico que me abriu as portas para o time do Sicredi.
 
 ## Visão geral
